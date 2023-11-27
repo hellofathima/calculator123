@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary calculate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="text-center">Calculate salary</h1>
+    <div class="container mt-5 p-3 bg-info" style="width:500px;">
+        
+            <form action="" method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <div class="text-center">
+                <button type="submit" value="Calculate" class="btn btn-primary p-2 mt-3 text-center mx-auto" >Calculate</button>
+            </div>
+            </form>
+            {{result}}
+        
+    </div>
+</body>
+</html>
